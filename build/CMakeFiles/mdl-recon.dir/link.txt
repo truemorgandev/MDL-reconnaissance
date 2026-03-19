@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/mdl-recon.dir/link.d "CMakeFiles/mdl-recon.dir/src/main.cpp.o" "CMakeFiles/mdl-recon.dir/src/loader/loader.cpp.o" -o mdl-recon  -ldl
