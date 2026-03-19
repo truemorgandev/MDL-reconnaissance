@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <vector>
 
@@ -8,10 +9,27 @@ private:
     std::vector<std::string> subdomains;
 
 public:
-    std::string getTarget();
-    std::vector<std::string> getUrls();
-    std::vector<std::string> getSubdomains();
-    void setTarget(std::string givenTarget);
-    void addSubdomain(std::string subdomain);
-    void addUrl(std::string url);
+    const std::string& getTarget() const {
+        return target;
+    }
+
+    const std::vector<std::string>& getUrls() const {
+        return urls;
+    }
+
+    const std::vector<std::string>& getSubdomains() const {
+        return subdomains;
+    }
+
+    void setTarget(const std::string& givenTarget) {
+        target = givenTarget;
+    }
+
+    void addSubdomain(const std::string& subdomain) {
+        subdomains.push_back(subdomain);
+    }
+
+    void addUrl(const std::string& url) {
+        urls.push_back(url);
+    }
 };
