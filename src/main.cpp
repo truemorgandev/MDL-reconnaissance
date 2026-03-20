@@ -8,9 +8,6 @@ int main() {
     Context mainCtx;
     Engine engine(mainCtx);
     engine.load();
-    mainCtx.addUrl("example.com");
-    mainCtx.setTarget("truemorgantest.hack");
-    mainCtx.addSubdomain("admin-very-secret-env.truemorgan.xyz");
     engine.run();
 
     

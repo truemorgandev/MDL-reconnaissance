@@ -2,16 +2,19 @@
 #include "src/core/module/module.hpp"
 #include "src/core/context/context.hpp"
 #include <cstdio>
+#include "src/core/utilities/execution.hpp"
 class ExampleModule : public Module {
 public:
     std::string name() const override {
-        return "example";
+        return "START_MODULE";
     }
 
     void run(Context& context) override {
-        std::cout << "[*] running whois module\n";
-
-        std::cout << "[+] whois module finished\n";
+        std::cout << "[*] Welcome to mdl-recon framework!\n";
+        std::cout << "[*] Enter target domain\n";
+        std::cin>> context.target;
+        std::cout << "[*] Enter rate limit (rps)\n";
+        std::cin>>context.ratelimit;
     }
 };
 
