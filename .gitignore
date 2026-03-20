@@ -1,2 +1,5 @@
 build/
 modules/
+*.o
+*.d
+CMakeFiles/

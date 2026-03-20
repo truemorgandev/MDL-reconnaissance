@@ -7,6 +7,7 @@ private:
     std::string target;
     std::vector<std::string> urls;
     std::vector<std::string> subdomains;
+    int ratelimit;
 
 public:
     const std::string& getTarget() const {
@@ -31,5 +32,9 @@ public:
 
     void addUrl(const std::string& url) {
         urls.push_back(url);
+    }
+
+    void setRateLimit(int ratelimit){
+        this->ratelimit;
     }
 };
