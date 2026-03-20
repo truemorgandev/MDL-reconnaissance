@@ -3,3 +3,4 @@ modules/
 *.o
 *.d
 CMakeFiles/
+.env
