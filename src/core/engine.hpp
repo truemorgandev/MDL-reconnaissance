@@ -10,9 +10,7 @@ private:
 
 public:   
     void run(){
-        Graphics::init();
-        Graphics::run();
-        Graphics::terminate();
+
         for (auto& m : modules) {
         std::cout << "Module: " << m.module->name() << std::endl;
         m.module->run(context);

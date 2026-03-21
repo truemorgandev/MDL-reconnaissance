@@ -50,7 +50,7 @@ public:
             ImGui::Text("IMGUI IS ALIVE [DEBUG]");
 
             if (ImGui::Button("Run all modules")) {
-                run_all_modules = true;
+                
             }
             ImGui::End();
 
